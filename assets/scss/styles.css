@@ -1,0 +1,298 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+body {
+  font-family: "poppins";
+}
+
+.payment-section {
+  padding: 80px 0;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.payment-section .title-block {
+  width: 100%;
+  text-align: center;
+}
+.payment-section .title-block h2,
+.payment-section .title-block p {
+  margin: 0;
+}
+.payment-section .title-block h2 {
+  font-size: 36px;
+  margin-bottom: 4px;
+  color: #FD5602;
+}
+.payment-section .join-now {
+  text-align: center;
+}
+.payment-section .join-now .btn {
+  display: block;
+  padding: 14px 40px;
+  border: 2px solid;
+  border-color: #FD5602;
+  border-radius: 50px;
+  max-width: 200px;
+  color: #FD5602;
+  text-decoration: none;
+  margin: 0 auto;
+  transition: 0.3s all ease;
+}
+.payment-section .join-now .btn:hover {
+  border-color: #840404;
+  background: #840404;
+  color: white;
+}
+
+.payment-plans {
+  display: flex;
+  margin: 60px 0;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.payment-plans__each {
+  width: calc(25% - 16px);
+  flex-shrink: 0;
+}
+.payment-plans__each--free .payment-plans__each-inner {
+  background: #FD5602;
+}
+.payment-plans__each--basic .payment-plans__each-inner {
+  background: #FD5602;
+}
+.payment-plans__each--essential .payment-plans__each-inner {
+  background: #FD5602;
+}
+.payment-plans__each--premium .payment-plans__each-inner {
+  background: #FD5602;
+}
+.payment-plans [class^=payment-plans__],
+.payment-plans [class^=ent-plans__] {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.payment-plans .payment-plans__each-inner {
+  border-radius: 0;
+  color: #9B9B9B;
+  padding: 0;
+  text-align: left;
+  transition: all 0.2s;
+}
+.payment-plans .payment-plans__each-inner .plan-heading {
+  border-radius: 0;
+  margin: 0;
+  padding: 20px 25px;
+  position: relative;
+  background: #ececec;
+}
+.payment-plans .payment-plans__each-inner .plan-heading h3 {
+  line-height: 18px;
+  margin: 0;
+  text-align: left;
+  text-transform: none;
+  color: black;
+}
+.payment-plans .payment-plans__each-inner .plan-heading label {
+  border-radius: 3px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.2;
+  padding: 5px 10px;
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  background: #FD5602;
+}
+.payment-plans .payment-plans__each-inner .plan-body {
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 0 1px 1px;
+  padding: 20px;
+  min-height: 240px;
+  color: black;
+  background: white;
+}
+.payment-plans .payment-plans__each-inner .plan-body p {
+  color: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 14px;
+  padding-bottom: 0;
+}
+.payment-plans .payment-plans__each-inner .plan-body ul {
+  padding: 0;
+  position: relative;
+  list-style: none;
+}
+.payment-plans .payment-plans__each-inner .plan-body ul li {
+  color: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  list-style: none;
+  padding: 0;
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 3px;
+}
+.payment-plans .payment-plans__each-inner .plan-body ul li:last-of-type {
+  margin-bottom: 0;
+}
+.payment-plans .payment-plans__each-inner .plan-body ul li::before {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' id='Capa_1' viewBox='0 0 32 32' xml:space='preserve'%3E%3Cg%3E%3Cg id='check_x5F_alt'%3E%3Cpath style='fill: %23fd5602' d='M16,0C7.164,0,0,7.164,0,16s7.164,16,16,16s16-7.164,16-16S24.836,0,16,0z M13.52,23.383 L6.158,16.02l2.828-2.828l4.533,4.535l9.617-9.617l2.828,2.828L13.52,23.383z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.payment-plans .payment-plans__each-inner .plan-body .pricingInput {
+  background-color: transparent;
+  border: 1px solid #ddd;
+  height: 35px;
+  margin-right: 8px;
+  padding: 3px 5px;
+  width: 70px;
+}
+.payment-plans .payment-plans__each-inner .plan-pricing {
+  background: #FD5602;
+  color: white;
+  border-color: #ddd;
+  border-style: solid;
+  border-width: 0 1px 1px;
+  padding: 20px;
+}
+.payment-plans .payment-plans__each-inner .plan-pricing__inner {
+  margin-bottom: 25px;
+  min-height: 90px;
+}
+.payment-plans .payment-plans__each-inner .plan-pricing__inner .price {
+  color: inherit;
+  display: block;
+  font-size: 42px;
+  font-weight: 600;
+}
+.payment-plans .payment-plans__each-inner .plan-pricing__inner .price sup {
+  font-size: 22px;
+  font-weight: normal;
+  top: -11px;
+}
+.payment-plans .payment-plans__each-inner .plan-pricing__inner .price small {
+  color: inherit;
+  font-size: 16px;
+}
+.payment-plans .payment-plans__each-inner .plan-pricing__inner .monthly {
+  display: none;
+}
+.payment-plans .payment-plans__each-inner .plan-pricing__inner .pricing {
+  border: 1px solid;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 6px;
+  padding: 0 15px;
+  border-radius: 35px;
+}
+.payment-plans .payment-plans__each-inner .plan-pricing a.btn {
+  margin: 0;
+}
+.payment-plans .payment-plans__each-inner .plan-pricing .btnMonthly {
+  display: none;
+}
+.payment-plans .pricingViewToggler {
+  margin: 60px auto 0;
+  position: relative;
+  width: 225px;
+}
+.payment-plans .pricingViewToggler .toggle-button {
+  background-color: #fbfbfb;
+  border: 1px solid #e2e2e2;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
+  margin: 5px 0;
+  position: relative;
+  right: -30%;
+  width: 80px;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+.payment-plans .pricingViewToggler .toggle-button button {
+  background-color: #2daff4;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  display: block;
+  float: left;
+  height: 30px;
+  left: 8px;
+  margin: -3px 0 0 -3px;
+  outline: 0;
+  position: absolute;
+  top: 7px;
+  transition: left 0.3s;
+  width: 30px;
+}
+.payment-plans .pricingViewToggler .toggle-button-monthly button {
+  border: none;
+  height: 30px;
+  left: 42px;
+  margin: 0;
+  top: 4px;
+  width: 30px;
+}
+.payment-plans .pricingViewToggler span {
+  color: #cccccc;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  top: 8px;
+}
+.payment-plans .pricingViewToggler span.annual {
+  left: 0;
+}
+.payment-plans .pricingViewToggler span.monthly {
+  right: 0;
+}
+.payment-plans .pricingViewToggler span.active {
+  color: #333;
+}
+
+.christmasIcons .christmasHat {
+  left: -12px;
+  position: absolute;
+  top: -60px;
+}
+
+section.plansInclude {
+  background: #1A73A0;
+  color: #ffffff;
+}
+section.plansInclude h2 {
+  color: #ffffff;
+}
+section.plansInclude ul {
+  list-style: none;
+  padding: 15px 0;
+}
+section.plansInclude ul li {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 30px;
+  list-style: none;
+  padding: 20px 0 20px 50px;
+  position: relative;
+}/*# sourceMappingURL=styles.css.map */
