@@ -222,8 +222,8 @@ body {
   padding: 20px;
 }
 .payment-plans .payment-plans__each-inner .plan-pricing__inner {
-  margin-bottom: 25px;
-  min-height: 90px;
+  /* margin-bottom: 25px;
+  min-height: 90px; */
 }
 .payment-plans .payment-plans__each-inner .plan-pricing__inner .price {
   color: inherit;
