@@ -2,17 +2,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
 body {
   font-family: "poppins";
+  margin: 0;
+  padding: 0;
+}
+
+.payment-area {
+  padding: 40px 0 60px;
+}
+@media screen and (max-width: 767px) {
+  .payment-area {
+    padding: 20px 0;
+  }
 }
 
 .payment-section {
-  padding: 80px 0;
-  width: 100%;
+  padding: 40px 0px;
+}
+.payment-section .container {
+  width: calc(100% - 24px);
   max-width: 1440px;
   margin: 0 auto;
 }
 .payment-section .title-block {
   width: 100%;
   text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .payment-section .title-block {
+    max-width: 85%;
+    margin: 0 auto;
+  }
 }
 .payment-section .title-block h2,
 .payment-section .title-block p {
@@ -22,6 +41,16 @@ body {
   font-size: 36px;
   margin-bottom: 4px;
   color: #FD5602;
+}
+@media screen and (max-width: 767px) {
+  .payment-section .title-block h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .payment-section .title-block P {
+    font-size: 14px;
+  }
 }
 .payment-section .join-now {
   text-align: center;
@@ -38,6 +67,11 @@ body {
   margin: 0 auto;
   transition: 0.3s all ease;
 }
+@media screen and (max-width: 767px) {
+  .payment-section .join-now .btn {
+    padding: 12px 19px;
+  }
+}
 .payment-section .join-now .btn:hover {
   border-color: #840404;
   background: #840404;
@@ -45,14 +79,31 @@ body {
 }
 
 .payment-plans {
-  display: flex;
-  margin: 60px 0;
-  margin-left: -8px;
-  margin-right: -8px;
+  display: table;
+  width: 100%;
+  content: " ";
+  margin: 45px 0;
+}
+@media screen and (max-width: 767px) {
+  .payment-plans {
+    margin: 36px 0;
+  }
 }
 .payment-plans__each {
+  padding: 20px 0;
   width: calc(25% - 16px);
-  flex-shrink: 0;
+  float: left;
+}
+@media screen and (max-width: 1400px) {
+  .payment-plans__each {
+    width: calc(50% - 16px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .payment-plans__each {
+    width: calc(100% - 16px);
+    padding: 12px 0;
+  }
 }
 .payment-plans__each--free .payment-plans__each-inner {
   background: #FD5602;
@@ -66,8 +117,7 @@ body {
 .payment-plans__each--premium .payment-plans__each-inner {
   background: #FD5602;
 }
-.payment-plans [class^=payment-plans__],
-.payment-plans [class^=ent-plans__] {
+.payment-plans [class^=payment-plans__] {
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -84,6 +134,11 @@ body {
   padding: 20px 25px;
   position: relative;
   background: #ececec;
+}
+@media screen and (max-width: 767px) {
+  .payment-plans .payment-plans__each-inner .plan-heading {
+    padding: 17px 25px;
+  }
 }
 .payment-plans .payment-plans__each-inner .plan-heading h3 {
   line-height: 18px;
@@ -107,13 +162,18 @@ body {
   background: #FD5602;
 }
 .payment-plans .payment-plans__each-inner .plan-body {
-  border-color: #ddd;
+  border-color: #dfdfdf;
   border-style: solid;
   border-width: 0 1px 1px;
   padding: 20px;
   min-height: 240px;
   color: black;
   background: white;
+}
+@media screen and (max-width: 767px) {
+  .payment-plans .payment-plans__each-inner .plan-body {
+    min-height: 210px;
+  }
 }
 .payment-plans .payment-plans__each-inner .plan-body p {
   color: inherit;
@@ -143,8 +203,7 @@ body {
 .payment-plans .payment-plans__each-inner .plan-body ul li::before {
   position: absolute;
   left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 2px;
   content: "";
   display: block;
   width: 16px;
@@ -153,14 +212,6 @@ body {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-}
-.payment-plans .payment-plans__each-inner .plan-body .pricingInput {
-  background-color: transparent;
-  border: 1px solid #ddd;
-  height: 35px;
-  margin-right: 8px;
-  padding: 3px 5px;
-  width: 70px;
 }
 .payment-plans .payment-plans__each-inner .plan-pricing {
   background: #FD5602;
@@ -198,7 +249,7 @@ body {
   font-size: 14px;
   font-weight: 600;
   margin-top: 6px;
-  padding: 0 15px;
+  padding: 4px 15px;
   border-radius: 35px;
 }
 .payment-plans .payment-plans__each-inner .plan-pricing a.btn {
